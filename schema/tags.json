@@ -1,0 +1,57 @@
+{
+  "topic": [
+    "dark-data",
+    "knowledge-management",
+    "sustainability",
+    "public-trust",
+    "data-breach",
+    "message-concreteness",
+    "human-pet-bond",
+    "chatbot-humor",
+    "service-recovery",
+    "influencer-persona",
+    "ai-continuance",
+    "pet-anthropomorphism"
+  ],
+  "theory": [
+    "seci",
+    "knowledge-based-view",
+    "dynamic-capabilities",
+    "protection-motivation",
+    "attribution",
+    "goal-directed-impression-formation"
+  ],
+  "construct": [
+    "perceived-threat",
+    "perceived-efficacy",
+    "affective-trust",
+    "cognitive-trust",
+    "authenticity",
+    "persona-coherence",
+    "strategic-motive-attribution",
+    "evaluation-goals",
+    "trait-compatibility"
+  ],
+  "method": [
+    "experiment",
+    "survey",
+    "sem",
+    "regression",
+    "negative-binomial",
+    "fsqca",
+    "systematic-review",
+    "case-study",
+    "knowledge-graph",
+    "qualitative"
+  ],
+  "context": [
+    "industrial-maintenance",
+    "e-government",
+    "e-commerce",
+    "social-media",
+    "human-influencer",
+    "chatbot",
+    "consumer-ai",
+    "pet-video"
+  ]
+}

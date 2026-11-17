@@ -1,0 +1,147 @@
+{
+  "version": "1.0.0",
+  "format": "csv",
+  "encoding": "UTF-8",
+  "delimiter": ",",
+  "list_separator": "|",
+  "fields": [
+    {
+      "name": "paper_id",
+      "type": "string",
+      "required": "yes",
+      "description": "永久識別碼，例如 lit-000001；只增不改、不重用"
+    },
+    {
+      "name": "citekey",
+      "type": "string",
+      "required": "yes",
+      "description": "ASCII 引用鍵，例如 wang2026shorttopic；未知作者或年用 anon/nd；碰撞加 a,b"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "required": "yes",
+      "description": "正式原文標題；不可自行翻譯取代"
+    },
+    {
+      "name": "authors",
+      "type": "string",
+      "required": "no",
+      "description": "依原順序 Last, Given；作者間使用 |"
+    },
+    {
+      "name": "year",
+      "type": "integer|null",
+      "required": "no",
+      "description": "正式出版年；未知留空"
+    },
+    {
+      "name": "publication_type",
+      "type": "enum",
+      "required": "yes",
+      "description": "journal_article|conference_paper|book|book_chapter|preprint|thesis|report|other"
+    },
+    {
+      "name": "venue",
+      "type": "string",
+      "required": "no",
+      "description": "期刊、會議或出版者全名"
+    },
+    {
+      "name": "doi",
+      "type": "string",
+      "required": "no",
+      "description": "小寫裸 DOI；移除 https://doi.org/ 及 doi: 前綴"
+    },
+    {
+      "name": "url",
+      "type": "uri",
+      "required": "no",
+      "description": "無 DOI 時優先使用出版者或機構永久連結"
+    },
+    {
+      "name": "language",
+      "type": "string",
+      "required": "no",
+      "description": "例如 en、zh-Hant、zh-Hans"
+    },
+    {
+      "name": "abstract",
+      "type": "string",
+      "required": "no",
+      "description": "自行摘要或可合法使用的摘要；公開庫避免大量複製"
+    },
+    {
+      "name": "projects",
+      "type": "list",
+      "required": "no",
+      "description": "對應 projects 中專案代碼，以 | 分隔"
+    },
+    {
+      "name": "tags",
+      "type": "list",
+      "required": "no",
+      "description": "受控詞彙 namespace:value，以 | 分隔"
+    },
+    {
+      "name": "reading_status",
+      "type": "enum",
+      "required": "yes",
+      "description": "inbox|screened|reading|read|excluded"
+    },
+    {
+      "name": "priority",
+      "type": "enum",
+      "required": "yes",
+      "description": "high|medium|low"
+    },
+    {
+      "name": "added_on",
+      "type": "date",
+      "required": "yes",
+      "description": "YYYY-MM-DD"
+    },
+    {
+      "name": "updated_on",
+      "type": "date",
+      "required": "yes",
+      "description": "YYYY-MM-DD；不得早於 added_on"
+    },
+    {
+      "name": "screening_reason",
+      "type": "string",
+      "required": "no",
+      "description": "納入理由；excluded 必填排除理由"
+    },
+    {
+      "name": "note_path",
+      "type": "path",
+      "required": "no",
+      "description": "相對於根目錄；已讀必填 notes/<paper_id>.md"
+    },
+    {
+      "name": "source_url",
+      "type": "uri",
+      "required": "yes",
+      "description": "實際發現/查核此筆資料的來源連結"
+    },
+    {
+      "name": "metadata_checked_on",
+      "type": "date",
+      "required": "no",
+      "description": "核對作者、標題、年分、DOI 的日期"
+    },
+    {
+      "name": "fulltext_status",
+      "type": "enum",
+      "required": "yes",
+      "description": "not_sought|available_local|open_access|unavailable"
+    },
+    {
+      "name": "fulltext_url",
+      "type": "uri",
+      "required": "no",
+      "description": "合法公開全文連結；不放含權杖或個人雲端連結"
+    }
+  ]
+}

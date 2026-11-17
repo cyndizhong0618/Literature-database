@@ -1,0 +1,13 @@
+# 本地全文與私人分析；追蹤中的檔案不會因 ignore 自動移除
+private/
+fulltexts/
+*.pdf
+*.docx
+*.xlsx
+*.ris
+*.bib
+.env
+.env.*
+__pycache__/
+.DS_Store
+~$*
